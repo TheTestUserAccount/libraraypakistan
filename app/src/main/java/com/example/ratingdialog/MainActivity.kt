@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
 import androidx.fragment.app.FragmentManager
-import com.example.ratingdialog.RatingDialog;
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,12 +18,6 @@ class MainActivity : AppCompatActivity() {
 //            false,
 //            3)
 //        )
-
-
-        RatingD
-
-        var fm: FragmentManager = supportFragmentManager
-        newFRag.show(fm, "")
 
 
     }
