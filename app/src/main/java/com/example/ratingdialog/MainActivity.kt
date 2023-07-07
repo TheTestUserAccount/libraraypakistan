@@ -12,16 +12,17 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        var newFRag = RatingDialog(RatingModel("Kindly rate your experience with our Sales ",
-            "Kindly rate your experience with our Sales ",
-            "Kindly rate your experience with our Sales ",
-            "Kindly rate your experience with our Sales ",
-            false,
-            3)
-        )
+//        var newFRag = RatingDialog(RatingModel("Kindly rate your experience with our Sales ",
+//            "Kindly rate your experience with our Sales ",
+//            "Kindly rate your experience with our Sales ",
+//            "Kindly rate your experience with our Sales ",
+//            false,
+//            3)
+//        )
+
+        Rating
         var fm: FragmentManager = supportFragmentManager
         newFRag.show(fm, "")
-
 
 
     }
