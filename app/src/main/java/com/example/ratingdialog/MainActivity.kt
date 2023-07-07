@@ -20,7 +20,9 @@ class MainActivity : AppCompatActivity() {
 //            3)
 //        )
 
-        Rating
+
+        RatingDialog
+
         var fm: FragmentManager = supportFragmentManager
         newFRag.show(fm, "")
 
