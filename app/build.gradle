@@ -31,10 +31,13 @@ android {
         targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = JavaVersion.VERSION_11
     }
     buildFeatures {
         dataBinding true
+    }
+    lintOptions {
+        disable "Instantiatable"
     }
 
 }
@@ -49,6 +52,6 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 //    implementation project(":RatingDialog")
-//    implementation 'com.github.TheTestUserAccount:libraraypakistan:10.0'
+    implementation 'com.github.TheTestUserAccount:worldlibrary:1.5'
 
 }

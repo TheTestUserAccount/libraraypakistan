@@ -23,7 +23,7 @@ import java.util.*
  * Created by Haider on 09/12/2021
  */
 
-class RatingDialog(var ratingModel: RatingModel) : DialogFragment() {
+class RatingDialog() : DialogFragment() {
 
 
     var TAG = "FEEDBACKDIALOG"
@@ -51,7 +51,7 @@ class RatingDialog(var ratingModel: RatingModel) : DialogFragment() {
         if (dialog != null) {
 
             dialog!!.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
-            dialog!!.setCancelable(ratingModel.isCancelable)
+            dialog!!.setCancelable(true)
         }
     }
 
@@ -71,13 +71,13 @@ class RatingDialog(var ratingModel: RatingModel) : DialogFragment() {
         mRatingBar = view.findViewById(R.id.ratingBar)
         var mGetComments: Editable? = mComments.text
 
-        val THRESHOLD = ratingModel.mThreshold
+        val THRESHOLD = 2
 
 
 
 
-        var label =ratingModel.mTitle
-        val thankYouyLabel = ratingModel.mDetail
+        var label ="ratingModel.mTitle"
+        val thankYouyLabel = "ratingModel.mDetail"
 
         thankYouTextView.text = thankYouyLabel
         rateOurWorkCJFeedback.text = label
