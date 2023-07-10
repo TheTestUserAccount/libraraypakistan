@@ -7,4 +7,3 @@ plugins {
 
 }
 
-apply plugin: 'maven-publish'
